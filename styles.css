@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    position: relative;
+    top: -272px;
+    left: 181px;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffc600;
+    -webkit-text-stroke: 1px red; 
+}
+
+.drum-kit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 140px 0px 0px -460px;
+    max-width: 800px;
+}
+
+.key {
+    border: 6px solid black;
+    border-radius: 7px;
+    margin: 16px;
+    font-size: 24px;
+    padding: 16px;
+    transition: 0.07s;
+    width: 120px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.key.playing {
+    transform: scale(1.3);
+    border-color: #ffc600;
+    box-shadow: 0 0 16px yellow;
+}
+
+kbd {
+    display: block;
+    font-size: 32px;
+}
+
+.sound {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #888;
+}
